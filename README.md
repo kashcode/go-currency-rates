@@ -16,7 +16,7 @@ CREATE TABLE `currency`.`rates` (
 ```
 
 3. run `go run . bank get-currency-rates` - to get and save currency rates
-4. run `fo run . api` - to start API endpoints
+4. run `go run . api` - to start API endpoints
  
    4.1 `http://127.0.0.1:8000/currencies` - return in JSON format latest curency rates.
 
@@ -30,7 +30,7 @@ CREATE TABLE `currency`.`rates` (
    Example:
 
    `http://127.0.0.1:8000/currencies/usd`:
-   
+
    ```json
    [{"currency":"USD","rate":1.1812,"date":"2021-04-06T00:00:00Z"}]
    ```
