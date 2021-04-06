@@ -1,0 +1,15 @@
+version: '3.2'
+
+services:  
+  mariadb:
+    image: mariadb
+    restart: always
+    ports:
+      - 3306:3306
+    volumes:
+      - mysql:/var/lib/mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=secret
+
+volumes:
+    mysql:
